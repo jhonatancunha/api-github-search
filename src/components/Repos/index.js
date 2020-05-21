@@ -7,19 +7,17 @@ import Pagination from '../Pagination'
 // STYLES
 import { Wrapper, Title, Line } from './style'
 
-
-const Repos = ({ 
-  className, 
-  title, 
-  repos, 
+const Repos = ({
+  className,
+  title,
+  repos,
   handlePagination,
   icon
 }) => {
-
   return (
     <Wrapper className={className}>
       <Title>
-        <img src={icon} alt="Title Icon!" />
+        <img src={icon} alt='Title Icon!' />
         {title}
       </Title>
       <ul>
@@ -29,10 +27,10 @@ const Repos = ({
           </Line>
         ))}
       </ul>
-      <Pagination 
-        total={repos.pagination.total} 
+      <Pagination
+        total={repos.pagination.total}
         activePage={repos.pagination.activePage}
-        onClick={handlePagination} 
+        onClick={handlePagination}
       />
     </Wrapper>
   )

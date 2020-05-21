@@ -8,7 +8,6 @@ import repoIcon from '../../assets/repo-icon.svg'
 import fallowersIcon from '../../assets/fallowers-icon.svg'
 import fallowingIcon from '../../assets/fallowing-icon.svg'
 
-
 const Wrapper = styled.div`
   color: #EFECEC;
   text-decoration: none;
@@ -53,12 +52,10 @@ const Wrapper = styled.div`
 
 `
 
-
 const UserInfo = ({ userInfo }) => {
-  console.log(userInfo)
   return (
     <Wrapper className='user_info'>
-      <img className="avatar" src={userInfo.avatar} alt='Avatar!' />
+      <img className='avatar' src={userInfo.avatar} alt='Avatar!' />
 
       <h1>
         <a href={`https://github.com/${userInfo.login}`}>
@@ -68,15 +65,15 @@ const UserInfo = ({ userInfo }) => {
 
       <ul className='respos-info'>
         <li>
-          <img src={repoIcon} alt="Repositorios Icons!" />
+          <img src={repoIcon} alt='Repositorios Icons!' />
           Repositórios: {userInfo.repos}
         </li>
         <li>
-        <img src={fallowersIcon} alt="Seguidores Icons!" />
+          <img src={fallowersIcon} alt='Seguidores Icons!' />
           Seguidores: {userInfo.followers}
         </li>
         <li>
-        <img src={fallowingIcon} alt="Seguindo Icons!" />
+          <img src={fallowingIcon} alt='Seguindo Icons!' />
           Seguindo: {userInfo.following}
         </li>
       </ul>

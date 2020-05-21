@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, {keyframes} from 'styled-components';
+import styled, { keyframes } from 'styled-components'
 
 const loading = keyframes`
   0%{
@@ -47,14 +47,13 @@ const Wrapper = styled.div`
 
 `
 
-
 export default () => {
   return (
     <Wrapper>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div />
+      <div />
+      <div />
+      <div />
     </Wrapper>
   )
 }

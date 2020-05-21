@@ -33,7 +33,6 @@ const Button = styled.button`
   }
 `
 
-
 const Actions = ({ handleRepo, handleStarred }) => {
   return (
     <Wrapper className='actions'>

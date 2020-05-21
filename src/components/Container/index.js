@@ -15,16 +15,15 @@ import { RepoWrapper, Logo, WrapperProfile, Wrapper } from './style'
 // IMAGES
 import iconRepo from '../../assets/repo-title.png'
 import starredRepo from '../../assets/starred-title.svg'
-import logo  from '../../assets/logo.svg'
+import logo from '../../assets/logo.svg'
 
-
-const Container = ({ 
-  userinfo, 
-  repos, 
-  starred, 
-  isFetching, 
-  handleSearch, 
-  handleRepo, 
+const Container = ({
+  userinfo,
+  repos,
+  starred,
+  isFetching,
+  handleSearch,
+  handleRepo,
   handleStarred,
   handlePagination,
   emptyLabel,
@@ -32,13 +31,12 @@ const Container = ({
   invalidUsername,
   networkError
 }) => {
-
   return (
-  
+
     <Wrapper className='App'>
 
       <Logo>
-        <img src={logo}/>
+        <img src={logo} alt="LogoApp" />
         <p>GitHubSearchTool</p>
         <span>Encontre todos os repositórios e favoritos de seus amigos.</span>
       </Logo>
@@ -50,15 +48,13 @@ const Container = ({
       {isFetching && <Loading />}
       {emptyLabel && <Error>Este campo é de preenchimento obrigatório.</Error>}
 
+      {!!userinfo &&
+        <WrapperProfile>
+          <UserInfo userInfo={userinfo} />
+          <Actions handleStarred={handleStarred} handleRepo={handleRepo} />
+        </WrapperProfile>}
 
-    {!!userinfo &&
-      <WrapperProfile>
-        <UserInfo userInfo={userinfo} />
-        <Actions handleStarred={handleStarred} handleRepo={handleRepo} />
-      </WrapperProfile>
-    } 
-
-    {emptyRepo && <Error>Repositório vazio.</Error>}
+      {emptyRepo && <Error>Repositório vazio.</Error>}
 
       <RepoWrapper>
         {/* !! é usado para converter para boolean */}
@@ -80,7 +76,7 @@ const Container = ({
             handlePagination={(clicked) => handlePagination('starred', clicked)}
           />}
       </RepoWrapper>
-      </Wrapper>
+    </Wrapper>
   )
 }
 

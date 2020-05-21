@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 const Error = styled.div`
   width: 100%;
@@ -20,7 +20,7 @@ const Error = styled.div`
   }
 `
 
-export default ({children}) => {
+export default ({ children }) => {
   return (
     <Error>
       <p>
