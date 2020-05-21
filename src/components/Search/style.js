@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
 export const Input = styled.input`
   width: 435px;
   height: 60px;
-  background: #1A1A16;
+  background: #1F2024;
   color: #EFECEC;
   border: 0;
   border-radius: 0 10px 10px 0;

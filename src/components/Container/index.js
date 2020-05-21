@@ -6,7 +6,7 @@ import Search from '../Search'
 import UserInfo from '../User-Info'
 import Actions from '../Actions'
 import Repos from '../Repos'
-import EmptyInput from '../common/Error/EmptyInput'
+import Error from '../common/Error'
 import Loading from '../common/Loading'
 
 // STYLES
@@ -15,6 +15,7 @@ import { RepoWrapper, Logo, WrapperProfile, Wrapper } from './style'
 // IMAGES
 import iconRepo from '../../assets/repo-title.png'
 import starredRepo from '../../assets/starred-title.svg'
+import logo  from '../../assets/logo.svg'
 
 
 const Container = ({ 
@@ -26,20 +27,28 @@ const Container = ({
   handleRepo, 
   handleStarred,
   handlePagination,
-  emptyLabel
+  emptyLabel,
+  emptyRepo,
+  invalidUsername,
+  networkError
 }) => {
+
   return (
   
     <Wrapper className='App'>
 
       <Logo>
+        <img src={logo}/>
         <p>GitHubSearchTool</p>
         <span>Encontre todos os repositórios e favoritos de seus amigos.</span>
       </Logo>
       <Search handleSearch={handleSearch} isDisabled={isFetching} />
 
+      {networkError && <Error>Limite de requisições execidas ou rede desconectada.</Error>}
+      {invalidUsername && <Error>Usuário não encontrado.</Error>}
+
       {isFetching && <Loading />}
-      {emptyLabel && <EmptyInput />}
+      {emptyLabel && <Error>Este campo é de preenchimento obrigatório.</Error>}
 
 
     {!!userinfo &&
@@ -49,7 +58,7 @@ const Container = ({
       </WrapperProfile>
     } 
 
-    
+    {emptyRepo && <Error>Repositório vazio.</Error>}
 
       <RepoWrapper>
         {/* !! é usado para converter para boolean */}

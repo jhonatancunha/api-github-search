@@ -49,10 +49,13 @@ const Wrapper = styled.div`
   ul li img{
     margin-right: 10px;
   }
+
+
 `
 
 
 const UserInfo = ({ userInfo }) => {
+  console.log(userInfo)
   return (
     <Wrapper className='user_info'>
       <img className="avatar" src={userInfo.avatar} alt='Avatar!' />

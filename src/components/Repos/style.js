@@ -17,7 +17,7 @@ export const Title = styled.h1`
   display: flex;
   align-items: center;
   border-radius: 8px 8px 0 0;
-
+  border: 4px solid #EFECEC;
   img{
     width: 50px;
     margin: 20px;

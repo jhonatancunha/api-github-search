@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body{
-    background: linear-gradient(#292828 , #282323);
+    background: linear-gradient(#1A1A14,#0F0F0F);
     font-family: 'Roboto', sans-serif;
   }
 

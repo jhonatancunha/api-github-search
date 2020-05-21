@@ -26,7 +26,10 @@ export default class App extends Component {
       repos: initialReposState,
       starred: initialReposState,
       isFetching: false,
-      emptyLabel: false
+      emptyLabel: false,
+      emptyRepo: false,
+      invalidUsername: false,
+      networkError: false
     }
 
     this.perPage = 10
@@ -51,18 +54,24 @@ export default class App extends Component {
         this.state.userinfo = null;
         this.state.repos= initialReposState;
         this.state.starred= initialReposState;
+        this.state.emptyRepo= false;
+        this.state.networkError= false;
         ///////////////////////////////////////
-
+        
+        this.setState({ isFetching: true })
 
         if(value === ''){
-          this.state.emptyLabel = true;
+          this.setState({
+            emptyLabel: true,
+            invalidUsername: false
+          })
           throw new Error(['label empty'])
         }else{
-          this.state.emptyLabel = false;
+          this.setState({emptyLabel: false})
         }
 
-        this.setState({ isFetching: true })
         const user = await axios.get(`https://api.github.com/users/${value}`)
+
 
         this.setState({
           userinfo: {
@@ -74,10 +83,18 @@ export default class App extends Component {
             following: user.data.following
           },
           repos: initialReposState,
-          starred: initialReposState
+          starred: initialReposState,
+          invalidUsername: false
         })
-
       } catch(err) {
+
+        if(err.message === 'Network Error'){
+          this.setState({networkError: true})
+        }else
+        if(err.message === 'Request failed with status code 404'){
+          this.setState({invalidUsername: true})
+        }
+
       } finally {
         this.setState({ isFetching: false })
       }
@@ -89,6 +106,12 @@ export default class App extends Component {
         const repo = await axios.get(`
           https://api.github.com/users/${this.state.userinfo.login}/${type}?per_page=${this.perPage}&page=${page}
         `)
+        
+        if(repo.data.length === 0){
+          console.log('troco')
+          this.setState({ emptyRepo: true })
+          return          
+        }
 
         const link = repo.headers.link || '';
         const totalPages = link.match(/&page=(\d+)>; rel="last"/);
@@ -105,10 +128,17 @@ export default class App extends Component {
               total: Number(totalPages ? totalPages[1] : this.state[type].pagination.total), 
               activePage: page,
             }
-          }
+          },
+          emptyRepo: false
         })
       } catch (err) {
+
         console.log(err)
+        
+      }finally{
+        setTimeout(() => {
+          this.setState({ emptyRepo: false })
+        },2500);
       }
     }
   }

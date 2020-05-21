@@ -33,6 +33,15 @@ export const Logo = styled.div`
   display: flex;
   flex-direction: column;
 
+  img{
+    opacity: 0.6;
+    transition: all .2s ease;
+
+    :hover{
+      opacity: 1;
+    }
+  }
+
   p{
     transition: opacity .2s ease;
     font-family: 'Kaushan Script', cursive;
@@ -69,4 +78,18 @@ export const WrapperProfile = styled.div`
   align-items: center;
   padding-top: 30px;
   margin-top: 30px;
+  position: relative;
+
+  ::before{
+    content: '';
+    background: linear-gradient(315deg, #ff0057, #e64a19);
+    z-index: -1;
+    top: -2px;
+    left: -2px;
+    position: absolute;
+    bottom: 2px;
+    transform: skew(2deg,2deg);
+    width: 101%;
+    height: 100%;
+  }
 `
