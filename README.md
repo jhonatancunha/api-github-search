@@ -1,4 +1,3 @@
-<img src="https://cdn-images-1.medium.com/max/1000/1*4u4uD5FiSkWdBNkRO6lVtQ.jpeg" alt="Direitos da imagem a Medium.com">
 
 <h1 align="center">GitHub Search Tool<h1>
 <p align="center">
