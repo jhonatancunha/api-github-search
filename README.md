@@ -1,68 +1,87 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="https://cdn-images-1.medium.com/max/1000/1*4u4uD5FiSkWdBNkRO6lVtQ.jpeg" alt="Direitos da imagem a Medium.com">
 
-## Available Scripts
+<h1 align="center">GitHub Search Tool<h1>
+<p align="center">
+<img src="https://img.shields.io/github/repo-size/jhonatancunha/api-github-search" alt="">
+<img src="https://img.shields.io/github/license/jhonatancunha/api-github-search" alt="">
+<img src="https://img.shields.io/github/last-commit/jhonatancunha/api-github-search" alt="">
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c73a830b-cab6-463d-a227-ad515300d03d/deploy-status)](https://app.netlify.com/sites/keen-mestorf-29e758/deploys)
+</p>
 
-In the project directory, you can run:
+<br>
+<a id="sobre"></a
 
-### `yarn start`
+## :bookmark: Sobre
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<p align="center">
+    Projeto criado com intuito de aprender a consumir API de terceiros. Para desenhar a interface utilizei o Figma. 
+</p>
 
-### `yarn test`
+<br>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# :computer: Web View
 
-### `yarn build`
+### :one: Fisrt Image
+<p align="center">
+    <img src="imgs/stage1.png" alt="">
+</p>
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### :two: Second Image
+<p align="center">
+    <img src="imgs/stage2.png" alt="">
+</p>
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### :three: Third Image
+<p align="center">
+    <img src="imgs/stage3.png" alt="">
+</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### :four: Fourth Image
+<p align="center">
+    <img src="imgs/stage4.png" alt="">
+</p>
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# :iphone: Mobile View
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p align="center">
+    <img src="imgs/mobile.png" alt="">
+</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## 🚀 Tecnologias
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [ReactJS][https://pt-br.reactjs.org/]
+- [Create React App][https://pt-br.reactjs.org/docs/create-a-new-react-app.html]
+- [StoryBook][https://storybook.js.org/]
+- [Styled-Components][https://styled-components.com/]
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ❓ Como utilizar?
 
-### Code Splitting
+### Instalação
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```bash
+$ cd api-github-search
+$ yarn
+$ yarn start
+```
 
-### Analyzing the Bundle Size
+# :ballot_box_with_check: Icons
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- [Instagram Icon][https://www.flaticon.com/free-icon/instagram_2111463?term=instagram&page=1&position=3]
+- [GitHub Icon][https://www.flaticon.com/free-icon/github_2111425?term=github&page=1&position=1]
+- [Love Icon][https://www.flaticon.com/free-icon/love_2913124?term=heart&page=1&position=3]
+- [Coffee Icon][https://www.flaticon.com/free-icon/coffee_2836515?term=coffe&page=1&position=31]
+- [Search Icon][https://www.flaticon.com/br/icone-gratis/procurar_149852?term=search&page=1&po]
+- [Following Icon][https://www.flaticon.com/free-icon/same-interest_1999025?term=following&page=1&position=83sition=1]
+- [Followers Icon][https://www.flaticon.com/free-icon/follower_2721516?term=followers&page=1&position=41]
+- [Folder Icon][https://www.flaticon.com/free-icon/file_1179233?term=folder&page=1&position=36]
+- [Favorite Icon][https://icons8.com/icon/80308/favorites]
+- [Repository Icon][https://icons8.com/icon/set/repository/color]
 
-### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<p align="center">
+Made with :coffee: por :copyright: Jhonatan Cunha.
+</p>
