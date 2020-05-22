@@ -28,7 +28,9 @@ export default class App extends Component {
       emptyLabel: false,
       emptyRepo: false,
       invalidUsername: false,
-      networkError: false
+      networkError: false,
+      isActionBtnRepoActive: 'hide',
+      isActionBtnStarredActive: 'hide'
     }
 
     this.perPage = 10
@@ -54,6 +56,8 @@ export default class App extends Component {
       this.state.starred = initialReposState
       this.state.emptyRepo = false
       this.state.networkError = false
+      this.state.isActionBtnRepoActive = 'hide'
+      this.state.isActionBtnStarredActive = 'hide'
       /// ////////////////////////////////////
 
       this.setState({ isFetching: true })
@@ -107,12 +111,20 @@ export default class App extends Component {
           return
         }
 
-        //LIMPAR O ARRAY CONTRARIO AO CLICAR NO BOTAO DNV
-        if(type === 'repos'){
-          this.setState({starred: initialReposState})
+        // LIMPAR O ARRAY CONTRARIO AO CLICAR NO BOTAO DNV
+        if (type === 'repos') {
+          this.setState({
+            starred: initialReposState,
+            isActionBtnRepoActive: 'clicked',
+            isActionBtnStarredActive: 'hide'
+          })
           console.log('restou starred')
-        }else{
-          this.setState({repos: initialReposState})
+        } else {
+          this.setState({
+            repos: initialReposState,
+            isActionBtnStarredActive: 'clicked',
+            isActionBtnRepoActive: 'hide'
+          })
         }
 
         const link = repo.headers.link || ''

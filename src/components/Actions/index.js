@@ -8,6 +8,7 @@ const Wrapper = styled.div`
 `
 
 const Button = styled.button`
+
   height: 60px;
   width: 150px;
   border: 0;
@@ -20,10 +21,19 @@ const Button = styled.button`
   font-weight: bolder;
   transition: all .2s ease-in-out;
 
+
+
+  &.clicked,
+  &.hide:focus{
+    background: #1A1A16;
+    border: 3px solid #EFECEC;
+    color: #EFECEC;
+  }
+
   @media (hover: hover){
     :hover{
       background: #1A1A16;
-      border: 2px solid #EFECEC;
+      border: 3px solid #EFECEC;
       color: #EFECEC;
     }
   }
@@ -35,11 +45,12 @@ const Button = styled.button`
   }
 `
 
-const Actions = ({ handleRepo, handleStarred }) => {
+const Actions = ({ handleRepo, handleStarred, btnRepo, btnStarred }) => {
+  console.log(btnRepo)
   return (
     <Wrapper className='actions'>
-      <Button onClick={handleRepo}>Repositórios</Button>
-      <Button onClick={handleStarred}>Favoritos</Button>
+      <Button className={btnRepo} onClick={handleRepo}>Repositórios</Button>
+      <Button className={btnStarred} onClick={handleStarred}>Favoritos</Button>
     </Wrapper>
   )
 }

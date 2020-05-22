@@ -17,7 +17,7 @@ export default () => {
     <Wrapper>
       <p>
         Made
-        with 
+        with
         <img src={coffee} alt='Coffee is love!' />
         and
         <img className='love' src={love} alt='Code is love!' />

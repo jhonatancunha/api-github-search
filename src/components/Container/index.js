@@ -9,6 +9,8 @@ import Repos from '../Repos'
 import Error from '../common/Error'
 import Loading from '../common/Loading'
 
+import Button from '../Actions/index'
+
 // STYLES
 import { RepoWrapper, Logo, WrapperProfile, Wrapper } from './style'
 
@@ -29,14 +31,16 @@ const Container = ({
   emptyLabel,
   emptyRepo,
   invalidUsername,
-  networkError
+  networkError,
+  isActionBtnRepoActive,
+  isActionBtnStarredActive
 }) => {
   return (
 
     <Wrapper className='App'>
 
       <Logo>
-        <img src={logo} alt="LogoApp" />
+        <img src={logo} alt='LogoApp' />
         <p>GitHubSearchTool</p>
         <span>Encontre todos os repositórios e favoritos de seus amigos.</span>
       </Logo>
@@ -51,7 +55,12 @@ const Container = ({
       {!!userinfo &&
         <WrapperProfile>
           <UserInfo userInfo={userinfo} />
-          <Actions handleStarred={handleStarred} handleRepo={handleRepo} />
+          <Actions
+            btnStarred={isActionBtnStarredActive}
+            btnRepo={isActionBtnRepoActive}
+            handleStarred={handleStarred}
+            handleRepo={handleRepo}
+          />
         </WrapperProfile>}
 
       {emptyRepo && <Error>Repositório vazio.</Error>}
