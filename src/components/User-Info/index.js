@@ -27,8 +27,10 @@ const Wrapper = styled.div`
     font-size: 1.3rem;
   }
 
-  a:hover{
-    text-decoration: underline;
+  @media (hover: hover){
+    a:hover{
+      text-decoration: underline;
+    }    
   }
 
   ul{

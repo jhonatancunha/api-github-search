@@ -55,16 +55,18 @@ export const Wrapper = styled.footer`
   .social-icons{
     img{
       margin-right: 8px;
+      cursor: pointer;
     }
   }
 
-  img{
-    opacity: 0.5;
-    transition: opacity .2s ease;
-  }
-
-  img:hover{
-    cursor: pointer;
-    opacity: 1;
+  @media (hover: hover){
+    img{
+      transition: opacity .2s ease;
+      opacity: 0.5;
+    }
+    img:hover{
+      cursor: pointer;
+      opacity: 1;
+    }
   }
 `

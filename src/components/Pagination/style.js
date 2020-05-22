@@ -41,9 +41,11 @@ export const WrapperUL = styled.ul`
     background: #1A1A16;
   }
 
-  .page:hover{
-    color: #EFECEC;
-    background: #1A1A16;
+  @media (hover: hover){
+    .page:hover{
+      color: #EFECEC;
+      background: #1A1A16;
+    }
   }
 
 `

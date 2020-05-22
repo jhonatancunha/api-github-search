@@ -46,14 +46,16 @@ export const LeftSearch = styled.button`
   transition: all .2s ease-in-out;
 
   
+  
+  @media (hover: hover){
+    :hover{
+      background: #1A1A16;
+      border: 3px solid #EFECEC;
+      cursor: pointer;
 
-  :hover{
-    background: #1A1A16;
-    border: 3px solid #EFECEC;
-    cursor: pointer;
-
-    svg path{
-      fill: #EFECEC;
-    }
+      svg path{
+        fill: #EFECEC;
+      }
+  }
   }
 `

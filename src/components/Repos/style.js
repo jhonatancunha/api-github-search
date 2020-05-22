@@ -32,8 +32,10 @@ export const Line = styled.li`
   overflow: hidden;
   text-overflow: ellipsis;
 
-  a:hover{
-    text-decoration: underline;
+  @media (hover: hover){
+    a:hover{
+      text-decoration: underline;
+    }
   }
 
   :nth-child(even){

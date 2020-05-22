@@ -103,9 +103,16 @@ export default class App extends Component {
         `)
 
         if (repo.data.length === 0) {
-          console.log('troco')
           this.setState({ emptyRepo: true })
           return
+        }
+
+        //LIMPAR O ARRAY CONTRARIO AO CLICAR NO BOTAO DNV
+        if(type === 'repos'){
+          this.setState({starred: initialReposState})
+          console.log('restou starred')
+        }else{
+          this.setState({repos: initialReposState})
         }
 
         const link = repo.headers.link || ''

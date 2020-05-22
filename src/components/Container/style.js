@@ -32,13 +32,16 @@ export const Logo = styled.div`
   flex-direction: column;
 
   img{
-    opacity: 0.6;
     transition: all .2s ease;
+    opacity: 0.6s;
 
-    :hover{
-      opacity: 1;
+    @media (hover: hover){
+      :hover{
+        opacity: 1;
+      }
     }
   }
+
 
   p{
     transition: opacity .2s ease;

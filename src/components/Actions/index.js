@@ -20,10 +20,12 @@ const Button = styled.button`
   font-weight: bolder;
   transition: all .2s ease-in-out;
 
-  :hover{
-    background: #1A1A16;
-  border: 2px solid #EFECEC;
-  color: #EFECEC;
+  @media (hover: hover){
+    :hover{
+      background: #1A1A16;
+      border: 2px solid #EFECEC;
+      color: #EFECEC;
+    }
   }
 
   @media (max-width: 430px){
