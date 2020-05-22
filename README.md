@@ -5,11 +5,14 @@
 <img src="https://img.shields.io/github/repo-size/jhonatancunha/api-github-search" alt="">
 <img src="https://img.shields.io/github/license/jhonatancunha/api-github-search" alt="">
 <img src="https://img.shields.io/github/last-commit/jhonatancunha/api-github-search" alt="">
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c73a830b-cab6-463d-a227-ad515300d03d/deploy-status)](https://app.netlify.com/sites/keen-mestorf-29e758/deploys)
+
 </p>
 
 <br>
-<a id="sobre"></a
+
+## :ballot_box_with_check: Demo Live
+- [Netlify - Clique Aqui](https://keen-mestorf-29e758.netlify.app/)
+
 
 ## :bookmark: Sobre
 
@@ -53,10 +56,10 @@
 
 ## 🚀 Tecnologias
 
-- [ReactJS][https://pt-br.reactjs.org/]
-- [Create React App][https://pt-br.reactjs.org/docs/create-a-new-react-app.html]
-- [StoryBook][https://storybook.js.org/]
-- [Styled-Components][https://styled-components.com/]
+- [ReactJS](https://pt-br.reactjs.org/)
+- [Create React App](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
+- [StoryBook](https://storybook.js.org/)
+- [Styled-Components](https://styled-components.com/)
 
 ## ❓ Como utilizar?
 
@@ -70,16 +73,16 @@ $ yarn start
 
 # :ballot_box_with_check: Icons
 
-- [Instagram Icon][https://www.flaticon.com/free-icon/instagram_2111463?term=instagram&page=1&position=3]
-- [GitHub Icon][https://www.flaticon.com/free-icon/github_2111425?term=github&page=1&position=1]
-- [Love Icon][https://www.flaticon.com/free-icon/love_2913124?term=heart&page=1&position=3]
-- [Coffee Icon][https://www.flaticon.com/free-icon/coffee_2836515?term=coffe&page=1&position=31]
-- [Search Icon][https://www.flaticon.com/br/icone-gratis/procurar_149852?term=search&page=1&po]
-- [Following Icon][https://www.flaticon.com/free-icon/same-interest_1999025?term=following&page=1&position=83sition=1]
-- [Followers Icon][https://www.flaticon.com/free-icon/follower_2721516?term=followers&page=1&position=41]
-- [Folder Icon][https://www.flaticon.com/free-icon/file_1179233?term=folder&page=1&position=36]
-- [Favorite Icon][https://icons8.com/icon/80308/favorites]
-- [Repository Icon][https://icons8.com/icon/set/repository/color]
+- [Instagram Icon](https://www.flaticon.com/free-icon/instagram_2111463?term=instagram&page=1&position=3)
+- [GitHub Icon](https://www.flaticon.com/free-icon/github_2111425?term=github&page=1&position=1)
+- [Love Icon](https://www.flaticon.com/free-icon/love_2913124?term=heart&page=1&position=3)
+- [Coffee Icon](https://www.flaticon.com/free-icon/coffee_2836515?term=coffe&page=1&position=31)
+- [Search Icon](https://www.flaticon.com/br/icone-gratis/procurar_149852?term=search&page=1&po)
+- [Following Icon](https://www.flaticon.com/free-icon/same-interest_1999025?term=following&page=1&position=83sition=1)
+- [Followers Icon](https://www.flaticon.com/free-icon/follower_2721516?term=followers&page=1&position=41)
+- [Folder Icon](https://www.flaticon.com/free-icon/file_1179233?term=folder&page=1&position=36)
+- [Favorite Icon](https://icons8.com/icon/80308/favorites)
+- [Repository Icon](https://icons8.com/icon/set/repository/color)
 
 
 <p align="center">
