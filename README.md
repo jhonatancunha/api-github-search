@@ -24,7 +24,7 @@
 
 # :computer: Web View
 
-### :one: Fisrt Image
+### :one: First Image
 <p align="center">
     <img src="imgs/stage1.png" alt="">
 </p>
